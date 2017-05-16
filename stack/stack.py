@@ -15,19 +15,64 @@
 
 Class Stack:
     def __init__(self):
+    """
+    initialize the Data structure
+    """
         self.items = []
 
+
     def isEmpty(self):
+    """
+    rtype: boolean
+    """
         return self.items == []
 
+
     def push(self,item):
+    """
+    type item:int
+    rtype: void
+    """
         self.items.append(item)
 
+
     def pop(self):
+    """
+    rtype: int 
+    """
         return self.items.pop()
 
+
     def peek(self):
+    """
+    rtype:int 
+    """
         return self.items[len(self.items)-1]
     
+
     def size(self):
+    """
+    rtype: int
+    """
         return len(self.items)
+
+
+if __name__ == "__main__":
+    obj = Stack()
+    print("obj is initialized as: ",obj.items)
+    obj.push(1)
+    obj.push(9)
+    obj.push(5)
+    obj.push(16)
+    obj.push(3)
+    print("After several pushes: ",obj.items)
+    print("Now is empty? ",obj.isEmpty())
+    print("Now the peek is: ",obj.peek())
+    print("the size is:", obj.size())
+    obj.pop()
+    obj.pop()
+    
+    print("After several pushes: ",obj.items)
+    print("Now is empty? ",obj.isEmpty())
+    print("Now the peek is: ",obj.peek())
+    print("the size is:", obj.size())

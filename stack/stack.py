@@ -13,7 +13,7 @@
 # size() returns the number of items in the stack.
 #    It needs no parameters and returns an int. 
 
-Class Stack:
+Class Stack(object):
     def __init__(self):
     """
     initialize the Data structure

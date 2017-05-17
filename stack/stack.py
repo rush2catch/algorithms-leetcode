@@ -13,47 +13,35 @@
 # size() returns the number of items in the stack.
 #    It needs no parameters and returns an int. 
 
-Class Stack(object):
+class Stack(object):
     def __init__(self):
-    """
-    initialize the Data structure
-    """
+    #@initialize the Data structure
         self.items = []
 
 
     def isEmpty(self):
-    """
-    rtype: boolean
-    """
+    #@rtype: boolean
         return self.items == []
 
 
     def push(self,item):
-    """
-    type item:int
-    rtype: void
-    """
+    #@type item:int
+    #@rtype: void
         self.items.append(item)
 
 
     def pop(self):
-    """
-    rtype: int 
-    """
+    #@rtype: int
         return self.items.pop()
 
 
     def peek(self):
-    """
-    rtype:int 
-    """
+    #@rtype:int
         return self.items[len(self.items)-1]
     
 
     def size(self):
-    """
-    rtype: int
-    """
+    #@rtype: int
         return len(self.items)
 
 

@@ -32,16 +32,3 @@ class MinStack(object):
             return None
         else:
             return self.s[len(self.s)-1][1]
-
-if __name__ == "__main__":
-    test = MinStack()
-    test.push(1)
-    print(test.s)
-    test.push(8)
-    print(test.s)
-    test.push(-7)
-    print(test.s)
-    test.push(0)
-    print(test.s)
-    print(test.top())
-    print(test.getMin())

@@ -18,32 +18,26 @@ class Stack(object):
     #@initialize the Data structure
         self.items = []
 
-
     def isEmpty(self):
     #@rtype: boolean
         return self.items == []
-
 
     def push(self,item):
     #@type item:int
     #@rtype: void
         self.items.append(item)
 
-
     def pop(self):
     #@rtype: int
         return self.items.pop()
 
-
     def peek(self):
     #@rtype:int
         return self.items[len(self.items)-1]
-    
 
     def size(self):
     #@rtype: int
         return len(self.items)
-
 
 if __name__ == "__main__":
     obj = Stack()

@@ -1,7 +1,5 @@
 from stack import Stack
 
-#class Solution(object):
-
 def parChecker2(symbolString):
     s = Stack()
     balanced = True
@@ -15,7 +13,7 @@ def parChecker2(symbolString):
                 balanced = False
             else:
                 top = s.pop()
-                if top != symbol:
+                if (( top == '(' and symbol == ')') or ( top == '{' and symbol == '}') or ( top == '[' and symbol == ']')) == False :
                     balanced = False
         index = index + 1
 
@@ -24,6 +22,6 @@ def parChecker2(symbolString):
     else:
         return False
 
-#obj = Solution()
 print(parChecker2('[][[[{](){}][}[['))
-print(parChecker2('()'))
+print(parChecker2('([]){{()}}'))
+print(parChecker2('{[(})]'))

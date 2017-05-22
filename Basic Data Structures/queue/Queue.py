@@ -19,12 +19,11 @@ class Queue(object):
     def isEmpty(self):
         return self.items == []
 
-    def enqueue(self,x):
-        self.items.insert(0,x)
+    def enqueue(self, x):
+        self.items.insert(0, x)
 
     def dequeue(self):
         return self.items.pop()
 
     def size(self):
         return len(self.items)
-

@@ -15,5 +15,5 @@ def joseph(namelist,num):
 
     return simqueue.dequeue()
 
-pos = [i for i in range(1,41)]
-print(joseph(pos,7))
+arr = [i for i in range(1,41)]
+print(joseph(arr,7))

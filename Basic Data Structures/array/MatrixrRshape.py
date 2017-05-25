@@ -1,5 +1,5 @@
 # Problem: Reshape the Matrix
-# difficulty: Easy
+# Difficulty: Easy
 # Category: Array
 # Leetcode 566: https://leetcode.com/problems/reshape-the-matrix/#/description
 # Description:

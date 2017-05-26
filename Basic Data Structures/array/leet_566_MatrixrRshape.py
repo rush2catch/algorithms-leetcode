@@ -38,6 +38,16 @@
 """
 
 
+# @Solution 1
+"""
+Solution 1 contains two steps:
+1. convert the original matrix to a one row matrix or a list;
+   in this step, two for loops are used, thus the time complexity is O(n*2)
+2. convert the list to the new matrix, it takes O(n) in this step
+Thus, the time complexity of this solution is 0(n*2), which needs to be improved
+"""
+
+
 def matrix_reshape(matrix, row, column):
 
     # 0. initialize

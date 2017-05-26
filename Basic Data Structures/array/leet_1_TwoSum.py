@@ -43,11 +43,11 @@ class Solution(object):
 
         # initialize
         buff_dic = {}
-        for i in range(len(nums)):
-            buff_dic[nums[i]] = i
+
         for i in range(len(nums)):
             if target - nums[i] in buff_dic:
-                return [i, buff_dic[target - nums[i]]]
+                return [buff_dic[target - nums[i]], i]
+            buff_dic[nums[i]] = i
         return [-1, -1]
 
 
@@ -55,7 +55,7 @@ class Solution(object):
 n_0 = [2, 7, 11, 15]
 n_1 = [34, 56, 23, 45, 2, 44, 12, 21]
 n_2 = [3, 3, 1, 1, 2, 2]
-
+n_3 = [3, 2, 4]
 obj = Solution()
 print("Expected [0, 1], actual {}".format(obj.two_sum_2(n_0, 9)))
 print("Expected [-1, -1], actual {}".format(obj.two_sum_2(n_0, 11)))
@@ -63,5 +63,6 @@ print("Expected [0, 1], actual {}".format(obj.two_sum_2(n_1, 90)))
 print("Expected [4, 7], actual {}".format(obj.two_sum_2(n_1, 23)))
 print("Expected [0, 1], actual {}".format(obj.two_sum_2(n_2, 6)))
 print("Expected [2, 3], actual {}".format(obj.two_sum_2(n_2, 2)))
+print("Expected [1, 2], actual {}".format(obj.two_sum_2(n_3, 6)))
 
 

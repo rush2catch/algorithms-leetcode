@@ -64,5 +64,5 @@ print("Expected [4, 7], actual {}".format(obj.two_sum_2(n_1, 23)))
 print("Expected [0, 1], actual {}".format(obj.two_sum_2(n_2, 6)))
 print("Expected [2, 3], actual {}".format(obj.two_sum_2(n_2, 2)))
 print("Expected [1, 2], actual {}".format(obj.two_sum_2(n_3, 6)))
-
+print("Expected [1, 2], actual {}".format(obj.two_sum_1(n_3, 6)))
 

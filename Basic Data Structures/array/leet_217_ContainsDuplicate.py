@@ -1,6 +1,6 @@
 # Problem: Contains Duplicates
 # Difficulty: Easy
-# Category: Array
+# Category: Array/Hash Table
 # Leetcode 217: https://leetcode.com/problems/contains-duplicate/#/description
 # Description:
 """

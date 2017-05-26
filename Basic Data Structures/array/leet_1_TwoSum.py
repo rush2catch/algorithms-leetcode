@@ -1,6 +1,6 @@
 # Problem: Two Sum
 # Difficulty: Easy
-# Category: Array
+# Category: Array/Hash Table
 # Leetcode 1: https://leetcode.com/problems/two-sum/#/description
 # Description:
 """

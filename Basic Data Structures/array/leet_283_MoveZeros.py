@@ -17,23 +17,29 @@ Minimize the total number of operations.
 """
 we use two pointers or commonly cursors: the headCur and the tailCur.
 The headCur starts from the head of the array to find the zero element step by step.
-The tailCur marked the end position of the HeadCur which is len(nums) - tailCur,
-while tailCur is actually the count of zeros found by headCur.
+The tailCur marked the end position of the HeadCur which is len(nums) - count,
+while count is actually the number of zeros found by headCur.
 Time Complexity: O(n)
 """
 
 
 class Solution(object):
+
     def move_zeros(self, nums):
+        # exception excluding
         if len(nums) < 2:
             return nums
+        # initialize:
         headCur = 0
-        tailCur = 0
-        while headCur < len(nums) - tailCur:
+        count = 0
+        tailCur = len(nums)
+        # move the cursor to find 0s and put each found 0s at the tail
+        while headCur < tailCur:
             if nums[headCur] == 0:
                 nums.pop(headCur)
                 nums.append(0)
-                tailCur += 1
+                count += 1
+                tailCur = len(nums) - count
             else:
                 headCur += 1
         return nums

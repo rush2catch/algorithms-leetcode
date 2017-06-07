@@ -20,9 +20,9 @@ def time_consume(n):
     for i in range(n):
         a.append(i)
     # to get the current time in milli seconds
-    start = int(round(time.time() * 1000))
+    start = time.time() * 1000
     obj.bubble_sort(a)
-    end = int(round(time.time() * 1000))
+    end = time.time() * 1000
     ms = end - start
     return ms
 

@@ -25,14 +25,17 @@ class Solution(object):
 				return None
 		return sorted(nums)[int(len(nums) / 2)]
 
-
 	# use a hash method
 	def find_majority_2(self, nums):
+
+		# corner case to determine whether the array is empty
 		if len(nums) == 0:
 			return None
+
+		# initialize some params
 		hash_buff = {}
-		maxCount = 0
-		majNum = 0
+		max_count = 0
+		maj_num = 0
 
 		# use a hash table to store the each element and the times it appears
 		for i in range(len(nums)):
@@ -43,11 +46,11 @@ class Solution(object):
 
 		# find the majority one through the hash table
 		for key in hash_buff:
-			if hash_buff[key] > maxCount:
-				maxCount = hash_buff[key]
-				majNum = key
-		if maxCount > int(len(nums)/2):
-			return majNum
+			if hash_buff[key] > max_count:
+				max_count = hash_buff[key]
+				maj_num = key
+		if max_count > int(len(nums)/2):
+			return maj_num
 		else:
 			return None
 

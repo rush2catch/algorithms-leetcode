@@ -16,3 +16,23 @@ Note:
 n is a positive integer, which is in the range of [1, 10000].
 All the integers in the array will be in the range of [-10000, 10000].
 """
+
+
+class Solution(object):
+
+	def array_partition_1(self, nums):
+
+		# corner cases
+		if len(nums) <= 1:
+			return None
+
+		b = []
+		n = len(nums)
+		for i in range(len(nums)):
+			b.append((nums.sort[n-1-i], nums.sort[n-1-i-1]))
+
+		return b
+
+obj = Solution()
+testNums = [1, 4, 3, 2]
+print(obj.array_partition_1(testNums))

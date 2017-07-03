@@ -84,16 +84,42 @@ class Solution(object):
 			return True
 
 
+	# method 2: same as 1, but with much cleaner code
+	def place_flowers(self, flowerbed, n):
+
+		count = 1
+		result = 0
+
+		for i in range(len(flowerbed)):
+			if flowerbed[i] == 0:
+				count += 1
+			else:
+				result += int((count - 1) / 2)
+				count = 0
+
+		if count != 0:
+			result += int(count / 2)
+
+		return result >= n
+
 obj = Solution()
 flowerbed1 = [1, 0, 0, 0, 1]
 flowerbed2 = [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0]
 flowerbed3 = [0, 0, 1, 0, 0]
 flowerbed4 = [1]
 flowerbed5 = [0, 0, 0, 0, 0]
-print(obj.can_place_flowers(flowerbed1, 1))
-print(obj.can_place_flowers(flowerbed1, 2))
-print(obj.can_place_flowers(flowerbed2, 4))
-print(obj.can_place_flowers(flowerbed2, 5))
-print(obj.can_place_flowers(flowerbed3, 2))
-print(obj.can_place_flowers(flowerbed4, 0))
+print(obj.can_place_flowers(flowerbed1, 1), end = ' ')
+print(obj.can_place_flowers(flowerbed1, 2), end = ' ')
+print(obj.can_place_flowers(flowerbed2, 4), end = ' ')
+print(obj.can_place_flowers(flowerbed2, 5), end = ' ')
+print(obj.can_place_flowers(flowerbed3, 2), end = ' ')
+print(obj.can_place_flowers(flowerbed4, 0), end = ' ')
 print(obj.can_place_flowers(flowerbed5, 3))
+
+print(obj.place_flowers(flowerbed1, 1), end = ' ')
+print(obj.place_flowers(flowerbed1, 2), end = ' ')
+print(obj.place_flowers(flowerbed2, 4), end = ' ')
+print(obj.place_flowers(flowerbed2, 5), end = ' ')
+print(obj.place_flowers(flowerbed3, 2), end = ' ')
+print(obj.place_flowers(flowerbed4, 0), end = ' ')
+print(obj.place_flowers(flowerbed5, 3))

@@ -47,5 +47,7 @@ class Solution(object):
 
 # test cases
 obj = Solution()
-testNums = [1, 4, 3, 2]
-print(obj.array_partition_1(testNums))
+testNums1 = [1, 4, 3, 2]
+testNums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(obj.array_partition_1(testNums1))
+print(obj.array_partition_1(testNums2))

@@ -26,13 +26,28 @@ class Solution(object):
 		if len(nums) <= 1:
 			return None
 
-		b = []
+		# initialize
+		paired_list = []
 		n = len(nums)
-		for i in range(len(nums)):
-			b.append((nums.sort[n-1-i], nums.sort[n-1-i-1]))
+		max_sum = 0
 
-		return b
+		# sort the input array
+		nums.sort()
 
+		# partition the 2n elements
+		for i in range(0, n, 2):
+			paired_list.append((nums[n-1-i], nums[n-1-i-1]))
+
+		# get the sum
+		for i in range(int(len(nums)/2)):
+			max_sum += min(paired_list[i])
+
+		return max_sum
+
+
+# test cases
 obj = Solution()
-testNums = [1, 4, 3, 2]
-print(obj.array_partition_1(testNums))
+testNums1 = [1, 4, 3, 2]
+testNums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(obj.array_partition_1(testNums1))
+print(obj.array_partition_1(testNums2))

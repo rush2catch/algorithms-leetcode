@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/algorithms-leetcode.iml" filepath="$PROJECT_DIR$/.idea/algorithms-leetcode.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/data-structures-and-algorithms.iml" filepath="$PROJECT_DIR$/.idea/data-structures-and-algorithms.iml" />
+>>>>>>> origin/master
     </modules>
   </component>
 </project>

@@ -18,6 +18,7 @@ Then length of the input array is in range [1, 10,000].
 The input array may contain duplicates, so ascending order here means <=.
 """
 
+
 class Solution(object):
 
 	# a two - pointer solution:
@@ -30,31 +31,40 @@ class Solution(object):
 		left = 0
 		right = len(nums) - 1
 
-		print(nums)
-		print(sorted_array)
+		# print(nums)
+		# print(sorted_array)
+
+		if len(nums) <= 1:
+			return 0
 
 		# use two pointers moving from start and end to locate
 		while left <= right and (not left_stop or not right_stop):
 
-			while not left_stop:
+			if left == right:
+				return 0
 
+			if not left_stop:
 				if nums[left] != sorted_array[left]:
 					left_stop = True
 				else:
 					left += 1
-				print("left: {}, left_stop: {}".format(left, left_stop))
+				# print("left: {}, left_stop: {}".format(left, left_stop))
 
-			while not right_stop:
+			if not right_stop:
 				if nums[right] != sorted_array[right]:
 					right_stop = True
 				else:
 					right -= 1
-				print("right: {}, right_stop: {}".format(right, right_stop))
+				# print("right: {}, right_stop: {}".format(right, right_stop))
 
 		return right - left + 1
 
 obj = Solution()
 test_case1 = [2, 6, 4, 8, 10, 9, 15]
-test_case2 = [1, 2, 3, 3, 4, 5]
+test_case2 = [1, 2, 3, 4, 5]
+test_case3 = [1, 2, 4, 3, 5, 6]
+test_case4 = [1, 3, 2, 3, 3]
 print(obj.find_subarray(test_case1))
 print(obj.find_subarray(test_case2))
+print(obj.find_subarray(test_case3))
+print(obj.find_subarray(test_case4))

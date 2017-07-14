@@ -3,7 +3,7 @@ basic data structure and algorithms implemented in python
 
  - [ ] 1. Array
  - [ ] 2. String
-     ###### `bgcolor=#FF4500 Easy`
+     ###### `Easy`
      - [ ] atoi()
      - [x] leet28 - strStr()
      - [x] leet344 - Reverse String
@@ -64,5 +64,3 @@ basic data structure and algorithms implemented in python
     - [ ] leet107 - Binary Tree Level Order Traversal II
     ###### `Medium`
     ###### `Hard`
-
-   <table><tr><td bgcolor=#FF4500>这里的背景色是：OrangeRed，  十六进制颜色值：#FF4500， rgb(255, 69, 0)</td></tr></table>

@@ -9,6 +9,6 @@ basic data structure and algorithms implemented in python
     - [x] leet344 - Reverse String
     - [ ] leet541 - Reverse String II
     - [ ] leet606 - Construct String from Binary Tree
-    ####### `Medium`
-    ####### `Hard`
+    ###### `Medium`
+    ###### `Hard`
  - [ ] 3.

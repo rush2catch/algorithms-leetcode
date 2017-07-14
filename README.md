@@ -3,7 +3,7 @@ basic data structure and algorithms implemented in python
 
  - [ ] 1. Array
  - [ ] 2. String
-     ###### `Easy`
+     ###### `bgcolor=#FF4500 Easy`
      - [ ] atoi()
      - [x] leet28 - strStr()
      - [x] leet344 - Reverse String

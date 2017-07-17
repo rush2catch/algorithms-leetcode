@@ -7,7 +7,8 @@ basic data structure and algorithms implemented in python
      - [ ] atoi()
      - [x] leet28 - strStr()
      - [x] leet344 - Reverse String
-     - [ ] leet541 - Reverse String II
+     - [x] leet541 - Reverse String II
+     - [x] leet557 - Reverse String III
      - [ ] leet606 - Construct String from Binary Tree
      ###### `Medium`
      ###### `Hard`

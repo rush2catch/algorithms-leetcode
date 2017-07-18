@@ -9,22 +9,22 @@ basic data structure and algorithms implemented in python
 ###### &emsp;&emsp;&emsp;&emsp;2.1.3. 判断字符串是否符合回文字符串规则
 ##### &emsp;&emsp;2.2. 数字运算
 ###### &emsp;&emsp;&emsp;&emsp;2.2.1.int和long类型表示整数范围有限，所以经常用字符串实现大整数与大整数相关的计算，需要模拟笔算过程
-##### &emsp;&emsp; 2.3. 与数组操作有关的类型
+##### &emsp;&emsp;2.3. 与数组操作有关的类型
 ###### &emsp;&emsp;&emsp;&emsp;2.3.1. 数组相关的调整、排序等操作
 ###### &emsp;&emsp;&emsp;&emsp;2.3.2. 快速排序的划分过程需要掌握和改写
-##### &emsp;&emsp; 2.4. 字符计数
+##### &emsp;&emsp;2.4. 字符计数
 ###### &emsp;&emsp;&emsp;&emsp;2.4.1. 哈希表
 ###### &emsp;&emsp;&emsp;&emsp;2.4.2. 固定长度的数字，c/c++(256), java(65535)
 ###### &emsp;&emsp;&emsp;&emsp;2.4.3. 滑动窗口问题、寻找无重复子串问题(187. Repeated DNA Sequences),计算变位词
-##### &emsp;&emsp; 2.5. 动态规划
+##### &emsp;&emsp;2.5. 动态规划
 ###### &emsp;&emsp;&emsp;&emsp;2.5.1. 最长公共子串
 ###### &emsp;&emsp;&emsp;&emsp;2.5.2. 最长公共子序列
 ###### &emsp;&emsp;&emsp;&emsp;2.5.3. 最长回文子串
 ###### &emsp;&emsp;&emsp;&emsp;2.5.4. 最长回文子序列
-##### &emsp;&emsp; 2.6. 搜索相关
+##### &emsp;&emsp;2.6. 搜索相关
 ###### &emsp;&emsp;&emsp;&emsp;2.6.1. 广度优先搜索
 ###### &emsp;&emsp;&emsp;&emsp;2.6.2. 深度优先搜索
-##### &emsp;&emsp; 2.7. 高级算法和数据结构相关
+##### &emsp;&emsp;2.7. 高级算法和数据结构相关
 ###### &emsp;&emsp;&emsp;&emsp;2.7.1. Manacher算法 - 最长回文子串问题
 ###### &emsp;&emsp;&emsp;&emsp;2.7.2. KMP - 字符串匹配
 ###### &emsp;&emsp;&emsp;&emsp;2.7.3. 前缀树结构

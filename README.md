@@ -9,7 +9,7 @@ basic data structure and algorithms implemented in python
 ###### &emsp;&emsp;&emsp;&emsp;2.1.3. 判断字符串是否符合回文字符串规则
 ##### &emsp;&emsp;2.2. 数字运算
 ###### &emsp;&emsp;&emsp;&emsp;2.2.1.int和long类型表示整数范围有限，所以经常用字符串实现大整数与大整数相关的计算，需要模拟笔算过程
-#### &emsp;&emsp; 2.3. 与数组操作有关的类型
+##### &emsp;&emsp; 2.3. 与数组操作有关的类型
 ###### &emsp;&emsp;&emsp;&emsp;2.3.1. 数组相关的调整、排序等操作
 ###### &emsp;&emsp;&emsp;&emsp;2.3.2. 快速排序的划分过程需要掌握和改写
 ##### &emsp;&emsp; 2.4. 字符计数

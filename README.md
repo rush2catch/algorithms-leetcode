@@ -2,16 +2,15 @@
 basic data structure and algorithms implemented in python 
 
  - [ ] 1. Array
- - [ ] 2. String
-     ###### `Easy`
-     - [ ] atoi()
-     - [x] leet28 - strStr()
-     - [x] leet344 - Reverse String
-     - [x] leet541 - Reverse String II
-     - [x] leet557 - Reverse String III
-     - [ ] leet606 - Construct String from Binary Tree
-     ###### `Medium`
-     ###### `Hard`
+ 2. String
+    2.1. 规则判断
+        2.1.1. 判断字符串是否符合整数规则
+    2.2. 数字运算
+    2.3. 与数组操作有关的类型
+    2.4. 字符计数
+    2.5. 动态规划
+    2.6. 搜索相关
+    2.7. 高级算法和数据结构相关
  - [ ] 3. Linked List
     ###### `Easy`
     - [ ] leet237 - Delete/Add Node in a Linked List

@@ -9,7 +9,8 @@ The record only contains the following three characters:
 'A' : Absent.
 'L' : Late.
 'P' : Present.
-A student could be rewarded if his attendance record doesn't contain more than one 'A' (absent) or more than two continuous 'L' (late).
+A student could be rewarded if his attendance record doesn't contain
+more than one 'A' (absent) or more than two continuous 'L' (late).
 You need to return whether the student could be rewarded according to his attendance record.
 Example 1:
 Input: "PPALLP"
@@ -35,12 +36,16 @@ class Solution(object):
 			if s[i] == 'L' and i + 3 <= len(s) and set(s[i:i+3]) == {'L'}:
 				late = False
 			i += 1
+		if abscn > 1:
+			absent = False
 		return absent and late
 
 obj = Solution()
 s1 = 'PPALLP'
 s2 = 'PPALLL'
 s3 = 'ALLLPPPLLPL'
+s4 = 'AA'
 print(obj.check_record(s1))
 print(obj.check_record(s2))
 print(obj.check_record(s3))
+print(obj.check_record(s4))

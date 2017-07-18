@@ -21,22 +21,21 @@ class Solution(object):
 		n = len(s)
 		i = 1
 		res = ''
-		if n == 0 or k ==0 or k == 1:
+		if n == 0 or k == 0 or k == 1:
 			return s
-		quotient  = n // k
-		#remainder = n % k
+		quotient = n // k
 
 		while i <= quotient:
 			if i % 2 == 1:
 				res += s[(i - 1) * k:i * k][::-1]
 			else:
-				res += s[(i - 1)* k:i * k]
+				res += s[(i - 1) * k:i * k]
 			i += 1
 
 		if quotient % 2 == 1:
-			res += s[quotient * k: n]
+			res += s[quotient * k:n]
 		else:
-			res += s[quotient * k: n][::-1]
+			res += s[quotient * k:n][::-1]
 		return res
 
 obj = Solution()

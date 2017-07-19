@@ -1,8 +1,8 @@
 #### String
 ###### `Easy`
 - [x] leet028 - strStr()
-- [ ] leet067 - Add Binary
-- [ ] leet125 - Valid Palindrome
+- [x] leet067 - Add Binary
+- [x] leet125 - Valid Palindrome
 - [x] leet344 - Reverse String
 - [x] leet541 - Reverse String II
 - [x] leet557 - Reverse String III

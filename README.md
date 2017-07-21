@@ -69,16 +69,9 @@ basic data structure and algorithms implemented in python
     ###### `Hard`
  - [ ] 8. Depth First Search
     ###### `Easy`
-    - [ ] leet100 - Same Tree
-    - [ ] leet101 - Symmetric Tree
-    - [ ] leet104 - Maximum Depth of Binary Tree
-    - [ ] leet112 - Path Sum
-    - [ ] leet111 - Minimum Depth of Binary Tree
-    - [ ] leet110 - Banlanced Binary Tree
     ###### `Medium`
     ###### `Hard`
  - [ ] 9. Breadth Fist Search
     ###### `Easy`
-    - [ ] leet107 - Binary Tree Level Order Traversal II
     ###### `Medium`
     ###### `Hard`

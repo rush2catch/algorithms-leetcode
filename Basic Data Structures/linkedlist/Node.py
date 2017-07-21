@@ -15,7 +15,11 @@ class Node(object):
     def set_next(self, new_next):
         self.next = new_next
 
-temp = Node(93)
-print(temp.get_data())
-temp.set_data(39)
-print(temp.get_data())
+temp1 = Node(93)
+print(temp1.get_data())
+temp1.set_data(39)
+print(temp1.get_data())
+temp2 = Node(100)
+print(temp2.data)
+temp1.set_next(temp2)
+print(temp1.next.data)

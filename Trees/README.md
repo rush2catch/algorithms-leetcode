@@ -12,4 +12,5 @@
 - [ ] leet111 - Minimum Depth of Binary Tree
 - [ ] leet110 - Banlanced Binary Tree
 ###### `Medium`
+- [x] leet236 - Lowest Common Ancestor of a Binary Tree
 ###### `Hard`

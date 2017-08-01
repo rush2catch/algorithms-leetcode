@@ -1,6 +1,6 @@
 Number      Problem                                     Difficulty          Frequency
-1	        Two Sum	                                    2	                5
-8	        String to Integer (atoi)	                2	                5
+1	    Two Sum	                                2	            5
+8	    String to Integer (atoi)	                2	            5
 15	        3Sum	                                    3	                5
 20	        Valid Parentheses	                        2	                5
 21	        Merge Two Sorted Lists	                    2	                5

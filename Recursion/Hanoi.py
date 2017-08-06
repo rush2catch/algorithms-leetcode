@@ -6,7 +6,7 @@ class Solution(object):
 		wp = 'B'
 		self.moveTower(n, fp, tp, wp)
 
-	def moveTower(self,height, fromPole, toPole, withPole):
+	def moveTower(self, height, fromPole, toPole, withPole):
 		if height >= 1:
 			self.moveTower(height - 1, fromPole, withPole, toPole)
 			self.printRoute(fromPole, toPole)

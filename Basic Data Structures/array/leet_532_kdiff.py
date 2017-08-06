@@ -34,6 +34,9 @@ All the integers in the given input belong to the range: [-1e7, 1e7].
 # Solution:
 
 
+from collections import Counter
+
+
 class Solution(object):
 
     # an ugly brute force method...
@@ -59,8 +62,45 @@ class Solution(object):
         # print(set(buff_list))
         return len(set(buff_list))
 
+
+
+    # a better method
+    def k_dff(self, nums, k):
+
+        buff = {}
+        count = 0
+
+        if k < 0:
+            return 0
+
+        if k == 0:
+            new_nums = list(set(nums))
+            return len(set(list((Counter(nums) - Counter(new_nums)).elements())))
+
+        if k > 0:
+            nums = list(set(nums))
+
+            for i in range(len(nums)):
+                buff[nums[i]] = i
+            for i in range(len(nums)):
+                if nums[i] + k in buff:
+                    count += 1
+            return count
+
+
 obj = Solution()
-print(obj.kdiff([3, 1, 4, 1, 3, 5], 2))
-print(obj.kdiff([1, 2, 3, 4, 5], 1))
-print(obj.kdiff([1, 3, 1, 5, 4], 0))
-print(obj.kdiff([3, 1, 4, 1, 5], 2))
+test_case1 = [3, 1, 4, 1, 3, 5]
+test_case2 = [1, 2, 3, 4, 5]
+test_case3 = [1, 3, 1, 5, 4]
+
+print(obj.kdiff(test_case1, 2))
+print(obj.kdiff(test_case2, 1))
+print(obj.kdiff(test_case3, 0))
+print(obj.kdiff(test_case3, 2))
+
+print(obj.k_dff(test_case1, 2))
+print(obj.k_dff(test_case2, 1))
+print(obj.k_dff(test_case3, 0))
+print(obj.k_dff(test_case3, 2))
+
+

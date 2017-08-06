@@ -33,7 +33,22 @@ class Solution(object):
                 curHead += 1
         return len(nums)
 
+    def dedup(self, nums):
+        if len(nums) == 0:
+            return 0
+        prev = 0
+        count = 0
+        for curr in range(len(nums)):
+            if nums[curr] != nums[prev]:
+                prev = curr
+                count += 1
+        return count + 1
+
 obj = Solution()
+test1 = [1, 1, 2, 2]
+test2 = [1, 1, 2, 3, 3, 4, 4, 5, 5, 5, 5]
 print(obj.remove_duplicates([1, 1, 2, 2]))
 print(obj.remove_duplicates([1, 1, 2, 3, 3, 4, 4, 5, 5, 5, 5, 5, 5]))
+print(obj.dedup(test1))
+print(obj.dedup(test2))
 

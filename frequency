@@ -1,23 +1,23 @@
-Number      Problem                                     Difficulty          Frequency
-1	    Two Sum	                                2	            5
-8	    String to Integer (atoi)	                2	            5
-15	        3Sum	                                    3	                5
-20	        Valid Parentheses	                        2	                5
-21	        Merge Two Sorted Lists	                    2	                5
-28	        Implement strStr()	                        4	                5
-50	        Pow(x, n)	                                3	                5
-56	        Merge Intervals	                            4	                5
-57	        Insert Interval	                            4	                5
-65	        Valid Number	                            2	                5
-70	        Climbing Stairs	                            2	                5
-73	        Set Matrix Zeroes	                        3	                5
-88	        Merge Sorted Array	                        2	                5
-98	        Validate Binary Search Tree	                3	                5
-125	        Valid Palindrome	                        2	                5
-127	        Word Ladder	                                3	                5
-2	        Add Two Numbers	                            3	                4
-12	        Integer to Roman	                        3	                4
-13	        Roman to Integer	                        2	                4
+Number      	Problem                                     Difficulty          Frequency
+1	    	Two Sum	                                	2	            5
+8	    	String to Integer (atoi)	                2	            5
+15	        3Sum	                                   	3	            5
+20	        Valid Parentheses	                        2	            5
+21	        Merge Two Sorted Lists	                    	2	            5
+28	        Implement strStr()	                        4	            5
+50	        Pow(x, n)	                                3	            5
+56	        Merge Intervals	                            	4	            5
+57	        Insert Interval	                            	4	            5
+65	        Valid Number	                            	2	            5
+70	        Climbing Stairs	                            	2	            5
+73	        Set Matrix Zeroes	                        3	            5
+88	        Merge Sorted Array	                        2	            5
+98	        Validate Binary Search Tree	                3	            5
+125	        Valid Palindrome	                        2	            5
+127	        Word Ladder	                                3	            5
+2	        Add Two Numbers	                            	3	            4
+12	        Integer to Roman	                        3	            4
+13	        Roman to Integer	                        2	            4
 22	        Generate Parentheses	                    3	                4
 23	        Merge k Sorted Lists	                    3	                4
 24	        Swap Nodes in Pairs	                        2	                4

@@ -1,4 +1,6 @@
 #### Trees/ BFS / DFS
+###### `Basics`
+- [ ] Tree Traversal Iteratively
 ###### `Easy`
 - [ ] Implement a Tree / Find a Node / Delete a Node / Insert a Node
 - [x] Tree Traversal - in/pre/post order

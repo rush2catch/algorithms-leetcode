@@ -135,7 +135,7 @@ Number      	Problem                                     Difficulty             
 119	        single number II	bit manipulate
 120	        Binary Tree Preorder Traversal	recursive
 121	        Binary Tree Postorder Traversal	recursive
-	        copy list with random pointer	pointer
+111	        copy list with random pointer	pointer
 	        Linked List Cycle	2 pointer
 	        Reorder List	2 pointer+stack
 	        Sort List

@@ -1,6 +1,8 @@
 #### Trees/ BFS / DFS
 ###### `Basics`
-- [ ] Tree Traversal Iteratively
+- [x] Tree Traversal Recursively
+- [x] Tree Traversal Iteratively using Stack
+- [ ] Morris Traversal
 ###### `Easy`
 - [ ] Implement a Tree / Find a Node / Delete a Node / Insert a Node
 - [x] Tree Traversal - in/pre/post order

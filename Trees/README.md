@@ -2,6 +2,7 @@
 ###### `Basics`
 - [x] Tree Traversal Recursively
 - [x] Tree Traversal Iteratively using Stack
+- [x] Tree Level Order Traversal
 - [ ] Morris Traversal
 ###### `Easy`
 - [ ] Implement a Tree / Find a Node / Delete a Node / Insert a Node

@@ -19,4 +19,6 @@
 - [ ] leet110 - Banlanced Binary Tree
 ###### `Medium`
 - [x] leet236 - Lowest Common Ancestor of a Binary Tree
+- [x] leet105 - Construct Binary Tree from Preorder and Inorder Traversal
+- [x] leet106 - Construct Binary Tree from Inorder and Postorder Traversal
 ###### `Hard`

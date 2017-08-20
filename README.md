@@ -29,28 +29,28 @@ basic data structure and algorithms implemented in python
 ###### &emsp;&emsp;&emsp;&emsp;2.7.2. KMP - 字符串匹配
 ###### &emsp;&emsp;&emsp;&emsp;2.7.3. 前缀树结构
 ###### &emsp;&emsp;&emsp;&emsp;2.7.4. 后缀树及后缀数组
- - [ ] 3. Linked List
+ - [x] 3. Linked List
     ###### `Easy`
-    - [ ] leet237 - Delete/Add Node in a Linked List
-    - [ ] leet203 - Remove Linked List Elements
-    - [ ] leet206 - Reverse Linked List
-    - [ ] leet141 - Linked List Cycle
-    - [ ] leet160 - Intersection of Two Linked List
+    - [x] leet237 - Delete/Add Node in a Linked List
+    - [x] leet203 - Remove Linked List Elements
+    - [x] leet206 - Reverse Linked List
+    - [x] leet141 - Linked List Cycle
+    - [x] leet160 - Intersection of Two Linked List
     ###### `Medium`
     ###### `Hard`
- - [ ] 4. Hash Table
+ - [x] 4. Hash Table
     ###### `Easy`
     - [x] leet1 - Two Sum
-    - [ ] leet136 - Single Number
-    - [ ] leet217/219 - Contains Duplicates I/II
+    - [x] leet136 - Single Number
+    - [x] leet217/219 - Contains Duplicates I/II
     ###### `Medium`
     ###### `Hard`
- - [ ] 5. Tree
+ - [x] 5. Tree
     ###### `Easy`
-    - [ ] Implement a Tree / Find a Node / Delete a Node / Insert a Node
+    - [x] Implement a Tree / Find a Node / Delete a Node / Insert a Node
     - [x] Tree Traversal - in/pre/post order
-    - [ ] leet226 - Invert Binary Tree
-    - [ ] leet572 - Subtree of Another Tree
+    - [x] leet226 - Invert Binary Tree
+    - [x] leet572 - Subtree of Another Tree
     ###### `Medium`
     ###### `Hard`
  - [ ] 6. Stack
@@ -58,7 +58,7 @@ basic data structure and algorithms implemented in python
     - [x] leet155 - Min Stack
     - [ ] leet232 - Implement Queues with Stack
     - [ ] leet225 - Implement Stack with Queues
-    - [ ] leet20 - Valid Parentheses
+    - [x] leet20 - Valid Parentheses
     ###### `Medium`
     ###### `Hard`
  - [ ] 7. Binary Search

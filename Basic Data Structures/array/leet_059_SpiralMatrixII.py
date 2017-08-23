@@ -1,7 +1,7 @@
 # Problem:  Spiral Matrix II
 # Difficulty: Medium
 # Category: Array
-# Leetcode 59236: https://leetcode.com/problems/spiral-matrix-ii/description/
+# Leetcode 59: https://leetcode.com/problems/spiral-matrix-ii/description/
 # Description:
 """
 Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.

@@ -14,22 +14,56 @@ You may assume that each input would have exactly one solution and you may not u
 Input: numbers={2, 7, 11, 15}, target=9
 Output: index1=1, index2=2
 """
+
+
 class Solution(object):
 
-	# hash table solution
 	def two_sum_1(self, nums, target):
-		buff = {}
+	# a two pointer method
+		if len(nums) == 0:
+			return -1
+		low = 0
+		high = len(nums) - 1
+		res = ()
+		while low < high:
+			ans = nums[low] + nums[high]
+			if ans < target:
+				low += 1
+			if ans > target:
+				high -= 1
+			if ans == target:
+				return (low+1, high+1)
+		raise ValueError("No Solution")
+
+	def two_sum_2(self, nums, target):
+	# a binary search solution
+		if len(nums) == 0:
+			return None
+
 		for i in range(len(nums)):
-			if target - nums[i] in buff:
-				return [buff[target - nums[i]], i]
-			else:
-				buff[nums[i]] = i
+			ans = target  - nums[i]
+			pos = self.binary_search(ans, nums[i+1:])
+			if pos != -1:
+				return (i+1, i+pos+1)
+		return None
 
-	# two pointer
+	def binary_search(self, target, nums):
+		if len(nums) == 0:
+			return -1
+		low = 0
+		high = len(nums) - 1
 
-
-	# binary search
+		while low <= high:
+			mid = (low + high) // 2
+			if nums[mid] < target:
+				low = mid + 1
+			if nums[mid] > target:
+				high = mid - 1
+			if nums[mid] == target:
+				return mid + 1
+		raise  ValueError("No Solution")
 
 obj = Solution()
 testNums1 = [2, 7, 11, 15]
-print(obj.two_sum(testNums1, 9))
+print(obj.two_sum_1(testNums1, 9))
+print(obj.two_sum_2(testNums1, 9))

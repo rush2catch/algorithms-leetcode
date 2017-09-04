@@ -37,7 +37,7 @@ class Solution(object):
 
 
 obj = Solution()
-intervals1 = [[1,3],[2,6],[8,10],[15,18]]
-intervals2 = [[1,6], [2,5], [3, 7], [9,10], [11,15], [12,18]]
+intervals1 = [[1, 3], [2, 6], [8, 10], [15, 18]]
+intervals2 = [[1, 6], [2, 5], [3, 7], [9, 10], [11, 15], [12, 18]]
 print(obj.merge(intervals1))
 print(obj.merge(intervals2))

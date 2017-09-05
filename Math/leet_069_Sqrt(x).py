@@ -36,4 +36,6 @@ print(obj.sqrt(100))
 print(obj.sqrt(121))
 print(obj.sqrt(63))
 print(obj.sqrt(65))
+print(obj.sqrt(36))
+
 

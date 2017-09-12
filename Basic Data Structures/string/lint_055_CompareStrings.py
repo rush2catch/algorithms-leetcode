@@ -11,12 +11,9 @@ class Solution(object):
 	def compare_string(self, str1, str2):
 		if len(str1) < len(str2):
 			return False
-
 		dic = [0 for _ in range(26)]
-
 		for c in str1:
 			dic[ord(c) - 65] += 1
-
 		for c in str2:
 			if dic[ord(c) - 65] == 0:
 				return False

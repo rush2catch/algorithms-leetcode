@@ -17,7 +17,7 @@ class Solution(object):
 		max3 = None
 
 		for n in nums:
-			if n is max1 or n is max2 or n is max3:
+			if n == max1 or n == max2 or n == max3:
 				continue
 			if  max1 is None or n > max1:
 				max3 = max2
@@ -40,4 +40,6 @@ obj = Solution()
 t1 = [3, 2, 1]
 t2 = [1, 2]
 t3 = [3, 2, 2, 1]
-print(obj.third_max(t1), obj.third_max(t2), obj.third_max(t3))
+t4 = [-2147483648, -2147483648, -2147483648, -2147483648, 1, 1, 1]
+#print(obj.third_max(t1), obj.third_max(t2), obj.third_max(t3))
+print(obj.third_max(t4))

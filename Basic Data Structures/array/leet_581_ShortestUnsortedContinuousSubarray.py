@@ -24,40 +24,23 @@ class Solution(object):
 	# a two - pointer solution:
 	def find_subarray(self, nums):
 
-		# initialize
-		sorted_array = sorted(nums)
-		left_stop = False
-		right_stop = False
-		left = 0
-		right = len(nums) - 1
+		n = len(nums)
+		end = -2
+		begin = -1
+		minVal = nums[n - 1]
+		maxVal = nums[0]
 
-		# print(nums)
-		# print(sorted_array)
+		for i in range(1, n):
+			minVal = min(minVal, nums[n - i - 1])
+			maxVal = max(maxVal, nums[i])
+			if nums[i] < maxVal:
+				end = i
+			if nums[n-i-1] > minVal:
+				begin = n - i - 1
 
-		if len(nums) <= 1:
-			return 0
+		return end - begin + 1
 
-		# use two pointers moving from start and end to locate
-		while left <= right and (not left_stop or not right_stop):
 
-			if left == right:
-				return 0
-
-			if not left_stop:
-				if nums[left] != sorted_array[left]:
-					left_stop = True
-				else:
-					left += 1
-				# print("left: {}, left_stop: {}".format(left, left_stop))
-
-			if not right_stop:
-				if nums[right] != sorted_array[right]:
-					right_stop = True
-				else:
-					right -= 1
-				# print("right: {}, right_stop: {}".format(right, right_stop))
-
-		return right - left + 1
 
 obj = Solution()
 test_case1 = [2, 6, 4, 8, 10, 9, 15]

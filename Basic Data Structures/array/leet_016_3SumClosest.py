@@ -1,7 +1,7 @@
 # Problem: 3 Sum Closest
 # Difficulty: Medium
 # Category: Array
-# Leetcode 26: https://leetcode.com/problems/3sum-closest/description/
+# Leetcode 16: https://leetcode.com/problems/3sum-closest/description/
 # Description:
 """
 Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.

@@ -11,7 +11,7 @@ class Solution(object):
 		interval = [timeSeries[0]]
 		i = 1
 		ans = 0
-		print(timeSeries)
+
 		while i < len(timeSeries):
 			if interval[-1][1] < timeSeries[i][0]:
 				interval.append(timeSeries[i])
@@ -19,7 +19,7 @@ class Solution(object):
 				if interval[-1][1] < timeSeries[i][1]:
 					interval[-1][1] = timeSeries[i][1]
 			i += 1
-		print(interval)
+
 		for i in range(len(interval)):
 			ans += interval[i][1] - interval[i][0] + 1
 

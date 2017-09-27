@@ -20,34 +20,6 @@ Could you implement it using only constant extra space complexity?
 
 class Solution(object):
 
-    # solution 1:
-	def missing_number_1(self, nums):
-		"""
-		:param nums: List[int]
-		:return: int
-		"""
-		n = len(nums)
-		accmu = 0
-		traceZero = False
-		max = 0
-		for i in range(len(nums)):
-			if nums[i] == 0:
-				traceZero = True
-			if nums[i] >= max:
-				max = nums[i]
-		if not traceZero:
-			return 0
-		if traceZero and max == len(nums):
-			sum = int(max * (n + 1) / 2)
-		if traceZero and max == len(nums) - 1:
-			return None
-		for i in range(len(nums)):
-			accmu += nums[i]
-		missing_num = sum - accmu
-		return missing_num
-
-
-
 	# solution 2: less code
 	def missing_number_2(self, nums):
 		"""
@@ -79,12 +51,7 @@ test_case3 = [2, 4, 3, 1, 0]
 test_case4 = [3, 6, 4, 2, 1, 5]
 test_case5 = [0, 2]
 test_case6 = [1, 0]
-print(obj.missing_number_1(test_case1))
-print(obj.missing_number_1(test_case2))
-print(obj.missing_number_1(test_case3))
-print(obj.missing_number_1(test_case4))
-print(obj.missing_number_1(test_case5))
-print(obj.missing_number_1(test_case6))
+
 
 print(obj.missing_number_2(test_case1))
 print(obj.missing_number_2(test_case2))

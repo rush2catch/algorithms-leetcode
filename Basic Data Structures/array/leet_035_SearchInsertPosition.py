@@ -23,20 +23,27 @@ class Solution(object):
 	    """
 		if len(nums) == 0:
 			return None
-		if target < nums[0]:
+		if target <= nums[0]:
 			return 0
 		if target > nums[len(nums) - 1]:
 			return len(nums)
 
-		for i in range(len(nums)):
-			if nums[i] == target:
-				return i
-			elif nums[i] < target and target < nums[i + 1]:
-				return i+1
+		left = 0
+		right = len(nums) - 1
 
-test_list = [1, 3, 5, 6]
+		while left < right:
+			mid = (left + right) // 2
+			if nums[mid] == target:
+				return mid
+			elif nums[mid] < target:
+				left = mid + 1
+			else:
+				right = mid - 1
+		return left
+
+
+test1 = [1, 3]
+test2 = [1, 2, 3, 4, 5, 10]
 obj = Solution()
-print(obj.searchInsert(test_list, 5))
-print(obj.searchInsert(test_list, 2))
-print(obj.searchInsert(test_list, 7))
-print(obj.searchInsert(test_list, 0))
+print(obj.searchInsert(test2, 2))
+print(obj.searchInsert(test1, 3))

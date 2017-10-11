@@ -32,6 +32,18 @@ class Solution(object):
 
         return [int(i) for i in str(num + 1)]
 
+    def plus(self, digits):
+        carry = 1
+        for i in range(len(digits) - 1, -1, -1):
+            summ = digits[i] + carry
+            digits[i] = summ % 10
+            carry  = summ // 10
+        if carry == 1:
+            digits.insert(0, 1)
+        return digits
+
+
+
 obj = Solution()
-print(obj.plus_one([2, 3, 4, 5]))
-print(obj.plus_one([9, 9, 9, 9]))
+print(obj.plus([2, 3, 4, 5]))
+print(obj.plus([9, 9, 9, 9]))

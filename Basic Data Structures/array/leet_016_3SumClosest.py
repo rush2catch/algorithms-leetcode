@@ -24,7 +24,7 @@ class Solution(object):
 			while left < right:
 				sum3 = nums[i] + nums[left] + nums[right]
 				if abs(sum3 - target) == 0:
-					return summ
+					return sum3
 				elif abs(sum3 - target) < minDiff:
 					minDiff = abs(sum3 - target)
 					result = sum3

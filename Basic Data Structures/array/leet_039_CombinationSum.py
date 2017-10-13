@@ -45,5 +45,5 @@ class Solution(object):
 
 obj = Solution()
 nums = [2, 3, 6, 7]
-target = 7
+target = 6
 print(obj.combination(nums, target))

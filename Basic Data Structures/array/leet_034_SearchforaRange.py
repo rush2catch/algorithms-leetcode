@@ -53,3 +53,4 @@ a1 = [1, 1, 1, 1, 1]
 a2 = [5, 7, 7, 8, 8, 10]
 print(obj.search_range(a1, 1))
 print(obj.search_range(a2, 8))
+print(obj.search_range(a2, 11))

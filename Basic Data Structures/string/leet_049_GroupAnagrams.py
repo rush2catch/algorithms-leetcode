@@ -33,6 +33,22 @@ class Solution(object):
 			ans.append(dic[key])
 		return ans
 
+	def group_anagram(self, strs):
+		if not strs:
+			return []
+		dic = {}
+		ans = []
+		index = 0
+		for i in range(len(strs)):
+			s = ''.join(sorted(strs[i]))
+			if s in dic:
+				ans[dic[s]].append(strs[i])
+			else:
+				dic[s] = index
+				ans.append([strs[i]])
+				index += 1
+		return ans
+
 obj = Solution()
 str1 = ['eat', 'eta', 'ate', 'aet', 'pen', 'epn', 'number', 'call', 'llac']
-print(obj.group_anagrams(str1))
+print(obj.group_anagram(str1))

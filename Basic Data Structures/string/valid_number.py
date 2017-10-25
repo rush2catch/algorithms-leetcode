@@ -19,11 +19,13 @@ class Solution(object):
 				i += 1
 		if dotCount > 1:
 			return False
+		elif dotCount == 1 and (s[0] == '.' or s[-1] == '.'):
+			return False
 		else:
 			return True
 
 obj = Solution()
 s1 = '+0.  1'
-s2 = '+.01'
+s2 = '01.'
 s3 = 'abd'
 print(obj.valid(s1), obj.valid(s2), obj.valid(s3))

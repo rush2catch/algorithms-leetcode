@@ -25,7 +25,7 @@ class Solution(object):
 			return True
 
 obj = Solution()
-s1 = '+0.  1'
+s1 = '+01'
 s2 = '01.'
 s3 = 'abd'
 print(obj.valid(s1), obj.valid(s2), obj.valid(s3))

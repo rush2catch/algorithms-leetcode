@@ -1,8 +1,27 @@
+# Problem: Valid Number
+# Difficulty: Hard
+# Category: String
+# Leetcode 65:https://leetcode.com/problems/valid-number/description/
+# Description:
+"""
+Validate if a given string is numeric.
+Some examples:
+"0" => true
+" 0.1 " => true
+"abc" => false
+"1 a" => false
+"2e10" => true
+"2e+10" => true
+".01" => true
+"1." => true
+"""
+
 class Solution(object):
 	def valid(self, s):
 		s = s.strip()
 		i = 0
 		dotCount = 0
+		eCount = 0
 		if s[0] == '+' or s[0] == '-':
 			i += 1
 		while i < len(s):

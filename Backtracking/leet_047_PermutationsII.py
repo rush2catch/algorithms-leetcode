@@ -37,5 +37,5 @@ class Solution(object):
 				temp.pop()
 
 obj = Solution()
-a1 = [1, 1, 2]
+a1 = [1, 2, 3]
 print(obj.permute(a1))

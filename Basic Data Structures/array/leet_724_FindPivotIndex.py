@@ -27,6 +27,8 @@ There is no index that satisfies the conditions in the problem statement.
 
 
 class Solution(object):
+
+	# A binary search solution
 	def find_pivot(self, nums):
 		if len(nums) == 0:
 			return -1
@@ -44,6 +46,17 @@ class Solution(object):
 				right = mid
 		return pivot
 
+	# a O(N) one pass solution
+	def pivot_index(self, nums):
+		totalSum = sum(nums)
+		leftSum = 0
+		for i, x in enumerate(nums):
+			if leftSum == (totalSum - leftSum - x):
+				return i
+			leftSum += x
+		return -1
+
 obj = Solution()
 a1 = [1, 7, 3, 6, 5, 6]
 print(obj.find_pivot(a1))
+print(obj.pivot_index(a1))

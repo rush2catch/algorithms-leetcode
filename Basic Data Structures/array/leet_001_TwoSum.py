@@ -51,7 +51,6 @@ class Solution(object):
         return [-1, -1]
 
 
-# test cases:
 n_0 = [2, 7, 11, 15]
 n_1 = [34, 56, 23, 45, 2, 44, 12, 21]
 n_2 = [3, 3, 1, 1, 2, 2]
